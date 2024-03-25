@@ -45,7 +45,7 @@ def main():
     model = train_model(X, y)
 
     # Sidebar with user inputs
-    st.sidebar.title("Enter Patient Information")
+    st.sidebar.title("Enter Patient Metrics")
     age = st.sidebar.slider("Age", min_value=0, max_value=100, step=1)
     sex = st.sidebar.selectbox("Sex", ["Male", "Female"])
     cp = st.sidebar.selectbox("Chest Pain Type", [1, 2, 3, 4])
